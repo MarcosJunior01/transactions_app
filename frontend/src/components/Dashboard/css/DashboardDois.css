@@ -1,0 +1,226 @@
+.fundo-dashboard {
+    background-color: #f8ebfc;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.top-dashboard {
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.welcome-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #6e2aeb;
+}
+
+.welcome-card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 12px;
+    color: white;
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 150ms;
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.card p {
+    opacity: 0.8;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+
+.blue {
+    background: linear-gradient(135deg, #5b9df5, #438dfc);
+}
+
+
+.green {
+    background: linear-gradient(135deg, #5bf581, #43fc62);
+}
+
+.yellow {
+    background: linear-gradient(135deg, #ffc371, #ffb347);
+}
+
+.red {
+    background: linear-gradient(135deg, #f85032, #e73827);
+}
+
+.btn-feed,
+.btn-logout {
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 160px;
+}
+
+.btn-feed {
+    background-color: #6e2aeb;
+    color: white;
+}
+
+.btn-feed:hover {
+    background-color: #431796;
+}
+
+.btn-logoutt {
+    background-color: #ff5f5f;
+    width: 150px;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-logoutt:hover {
+    background-color: #e04b4b;
+}
+
+.btn-logout:hover {
+    background-color: #e04b4b;
+}
+
+.user-email {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/*GRÁFICOS*/
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.chart-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/*METAS*/
+
+.card-goal {
+    border-radius: 12px;
+    color: white;
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3vw;
+
+}
+
+
+.goal-card {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    color: #fff;
+    position: relative;
+}
+
+.goal-card h4 {
+    font-size: 1.1rem;
+}
+
+.goal-input {
+    margin-top: 1rem;
+    width: 100px;
+    height: 40px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.progress-bar-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    margin-top: 1rem;
+    height: 22px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.progress-bar {
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    height: 100%;
+    transition: width 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

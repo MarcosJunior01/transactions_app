@@ -1,0 +1,284 @@
+
+.fundo {
+  background-color: #f8ebfc;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Container principal da dashboard */
+.dashboard-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Alinha verticalmente no padrão */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho superior com título */
+.top {
+  background-color: white;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Card principal para filtros e tabela */
+.dashboard-card {
+  background-color: white;
+  color: #333;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+/* Conteúdo dentro do card */
+.dashboard-content {
+  margin-top: 1rem;
+}
+
+/* Estilização do container de filtros */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs e selects dentro dos filtros */
+.filters input,
+.filters select,
+.input-datepicker {
+  flex: 1 1 160px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Botão de filtro */
+
+.btn-back{
+    margin-left: 5%;
+    background-color: #5c41bd;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn-back:hover {
+  background-color: #3e298a;
+}
+
+ .btnLogout {
+    margin-left: 5%;
+    background-color: #ff5f5f;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .btnLogout:hover {
+  background-color: #b83333;
+  }
+
+/* Contador de resultados */
+.results-count {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Responsividade da tabela */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Estilo da tabela */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Células da tabela */
+.transactions-table th,
+.transactions-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+
+
+/* Cabeçalho da tabela */
+.transactions-table thead {
+  background-color: #ba98f8;
+  color: white;
+  user-select: none;
+}
+
+/* Estilos de linhas por status */
+.status-aprovado {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-reprovado {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-em-avaliação {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+
+.table-hover {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  background-color: transparent;
+}
+
+.table-hover thead th {
+  text-align: left;
+  padding: 12px 16px;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.table-hover tbody tr {
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.table-hover tbody tr:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.table-hover td {
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  color: #444;
+  vertical-align: middle;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+}
+
+.badge-success {
+  background-color: #28c76f;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.badge-danger {
+  background-color: #ea5455;
+}
+
+
+
+
+/*upload*/
+
+
+
+.input-file {
+  margin: 1rem 0;
+}
+
+.preview-table {
+  margin-top: 1.5rem;
+}
+
+.preview-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.preview-table th,
+.preview-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 10px;
+  background: #e0ffe0;
+  color: #236623;
+  border: 1px solid #9cd89c;
+  border-radius: 8px;
+}
+
+/* Scroll horizontal para telas pequenas */
+@media (max-width: 768px) {
+  /* Garante que o título e filtros fiquem empilhados */
+  .dashboard-container {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .top {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters input,
+  .filters select,
+  .input-datepicker,
+  .btn-feed {
+    flex: 1 1 100%;
+  }
+}
