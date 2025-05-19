@@ -26,7 +26,7 @@ Este projeto é uma aplicação web completa que permite gerenciar transações 
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/MarcosJunior01/transacoes.git
+git clone https://github.com/MarcosJunior01/transactions_app.git
 cd transacoes
 ```
 
