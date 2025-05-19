@@ -27,7 +27,7 @@ Este projeto é uma aplicação web completa que permite gerenciar transações 
 
 ```bash
 git clone https://github.com/MarcosJunior01/transactions_app.git
-cd transacoes
+cd transactions_app
 ```
 
 ### 2. Backend
